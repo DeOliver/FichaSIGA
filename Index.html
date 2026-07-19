@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ficha S.I.G.A</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 class="titulo-ficha">
+    S.I.G.A. - Sistema de Interpretação Genérico de Aventuras
+    </h1>
+
+    <div class="sheet">
+
+    <h2>Dados do Personagem</h2>
+
+    <header class="character-header">
+
+        <div class="character-data">
+
+            <div class="field">
+                <label for="nome">Nome</label>
+                <input
+                    id="nome"
+                    placeholder="Nome do Personagem">
+            </div>
+
+            <div class="field">
+                <label for="linhagem">Linhagem</label>
+                <select id="linhagem"></select>
+            </div>
+
+            <div class="field">
+                <label for="classe">Classe/Casta</label>
+                <select id="classe"></select>
+            </div>
+
+            <div class="field">
+                <label for="paradigma">Paradigma</label>
+                <select id="paradigma"></select>
+            </div>
+
+            <div class="field">
+                <label for="familia">Família</label>
+                <select id="familia"></select>
+            </div>
+
+            <div class="field">
+                <label for="cidade">Continente/Cidade</label>
+                <select id="cidade"></select>
+            </div>
+
+            <div class="field">
+                <label for="nivel">Nível / Experiência</label>
+
+                <div class="level-exp">
+
+                    <input
+                        id="nivel"
+                        type="number"
+                        value="1"
+                        min="1">
+
+                    <input
+                        id="experiencia"
+                        type="number"
+                        value="0"
+                        min="0">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="portrait-area">
+
+            <img
+                id="linhagemPortrait"
+                src="imagens/retrato-vazio.png">
+
+            <input
+                type="file"
+                id="portraitUpload"
+                accept="image/*"
+                hidden>
+
+        </div>
+
+    </header>
+
+<!-- ATRIBUTOS -->
+<section class="card atributos-card">
+
+    <div class="attributes">
+        <div class="attribute-box">
+                <label for="for">FOR</label>
+
+                <div class="attribute-row">
+                    <input id="for_bp" type="number" value="0">
+                    <input id="for_atual" type="number" value="0">
+                    <input id="for" type="number" value="0" readonly>
+                </div>
+            </div>
+
+            <div class="attribute-box">
+                <label for="agi">AGI</label>
+
+                <div class="attribute-row">
+                    <input id="agi_bp" type="number" value="0">
+                    <input id="agi_atual" type="number" value="0">
+                    <input id="agi" type="number" value="0" readonly>
+                </div>
+            </div>
+
+            <div class="attribute-box">
+                <label for="res">RES</label>
+
+                <div class="attribute-row">
+                    <input id="res_bp" type="number" value="0">
+                    <input id="res_atual" type="number" value="0">
+                    <input id="res" type="number" value="0" readonly>
+                </div>
+            </div>
+
+            <div class="attribute-box">
+                <label for="int">INT</label>
+
+                <div class="attribute-row">
+                    <input id="int_bp" type="number" value="0">
+                    <input id="int_atual" type="number" value="0">
+                    <input id="int" type="number" value="0" readonly>
+                </div>
+            </div>
+
+            
+            <div class="attribute-box">
+                <label for="von">VON</label>
+
+                <div class="attribute-row">
+                    <input id="von_bp" type="number" value="0">
+                    <input id="von_atual" type="number" value="0">
+                    <input id="von" type="number" value="0" readonly>
+                </div>
+            </div>
+
+            <div class="attribute-box">
+                <label for="pre">PRE</label>
+
+                <div class="attribute-row">
+                    <input id="pre_bp" type="number" value="0">
+                    <input id="pre_atual" type="number" value="0">
+                    <input id="pre" type="number" value="0" readonly>
+                </div>
+            </div>
+    </div>
+
+</section>
+
+<!-- STATUS -->
+<div class="status-grid">
+
+    <section class="card vida-card">
+        <h2>Vida e Éter</h2>
+        <label for="pv_atual">Pontos de Vida</label>
+        <input id="pv_atual">
+        <input id="pv_base" readonly>
+        <input id="pv_total" readonly>
+
+        <label for="pe_atual">Pontos de Éter</label>
+        <input id="pe_atual">
+        <input id="pe_base" readonly>
+        <input id="pe_total" readonly>
+
+        <label for="pd_atual">Pontos Divinos</label>
+        <input id="pd_atual">
+        <input id="pd_base" readonly>
+        <input id="pd_total" readonly>
+
+        <label for="macula1">Mácula</label>
+
+        <div class="check-track">
+            <input type="checkbox" id="macula1">
+            <input type="checkbox" id="macula2">
+            <input type="checkbox" id="macula3">
+            <input type="checkbox" id="macula4">
+            <input type="checkbox" id="macula5">
+        </div>    
+        
+        <textarea
+                    id="pv_pe_pd"
+                    class="notes-box">
+                </textarea>
+
+    </section>
+
+    <section class="card combate-card">
+        <h2>Combate</h2>
+
+        <div class="combat-box">
+
+            <label>Impulso</label>
+            <input id="impulso" readonly>
+            
+        </div>
+        
+        <div class="combat-box">
+            <label for="ataque_cac">Ataque CaC</label>
+            <input id="ataque_cac" readonly>
+        </div>
+
+        <div class="combat-box">
+            <label for="ataque_dist">Ataque Distância</label>
+            <input id="ataque_dist" readonly>
+        </div>
+
+        <div class="combat-box">
+            <label for="ataque_mag_int">Ataques Mágicos</label>
+
+            <div class="magic-triple">
+                <input id="ataque_mag_int" readonly>
+                <input id="ataque_mag_von" readonly>
+                <input id="ataque_mag_pre" readonly>
+            </div>
+
+        </div>
+
+        <div class="combat-box">
+            <label for="evasao">Evasão</label>
+            <input id="evasao" readonly>
+        </div>
+
+        <div class="combat-box">
+            <label for="defesaf">Defesa Física</label>
+            <input id="defesaf" readonly>
+        </div>
+
+        <div class="combat-box">
+            <label for="defesam">Defesa Mental</label>
+            <input id="defesam" readonly>
+        </div>
+
+        <div class="combat-box">
+            <label for="armadura">Armadura</label>
+            <select id="armadura">
+
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+            </select>
+        </div>
+    
+        <div class="combat-box">
+    <label for="bloqueio_base">Bloqueio</label>
+
+    <div class="triple-field">
+
+        <div>
+            <label for="bloqueio_base">Base</label>
+            <input
+                id="bloqueio_base"
+                type="number"
+                value="0">
+        </div>
+
+        <div>
+            <label for="bloqueio_mod">Mod</label>
+            <input
+                id="bloqueio_mod"
+                type="number"
+                value="0">
+        </div>
+
+        <div>
+            <label for="bloqueio_total">Total</label>
+            <input
+                id="bloqueio_total"
+                readonly>
+        </div>
+
+    </div>
+</div>
+
+    <label>Percepção</label>
+
+    <div class="triple-field">
+
+        <div>
+            <span>Base</span>
+            <input
+                id="percepcao_base"
+                type="number"
+                readonly>
+        </div>
+
+        <div>
+            <span>Bônus</span>
+            <input
+                id="percepcao_bonus"
+                type="number"
+                value="0">
+        </div>
+
+        <div>
+            <span>Total</span>
+            <input
+                id="percepcao_total"
+                readonly>
+        </div>
+
+    </div>
+
+    <div class="combat-box">
+        <label>Armas</label>
+        <table id="armas"></table>
+        <button onclick="addItem('armas')">Adicionar</button>
+        
+    </div>
+
+    </section>
+
+    <section class="card skills-card">
+        <h2>Especializações</h2>
+
+        <div id="skills"></div>
+
+    </section>
+
+</div> <!-- FECHA STATUS-GRID AQUI -->
+
+<!-- TUDO ABAIXO É INDEPENDENTE -->
+<div class="bottom-layout">
+
+    <!-- COLUNA ESQUERDA -->
+    <div class="left-column">
+
+        <div class="talentos-grid">
+
+                <section class="ativo-card card">
+                    <h2>Aptidões</h2>
+                    <table id="aptidoes"></table>
+                    <button onclick="addTalent('aptidoes')">Adicionar</button>
+                </section>
+                
+                <section class="ativo-card card">
+                    <h2>Talentos Ativos</h2>
+                    <table id="talentosAtivos"></table>
+                    <button onclick="addTalent('talentosAtivos')">Adicionar</button>
+                </section>
+
+                <section class="passivo-card card">
+                    <h2>Talentos Passivos</h2>
+                    <table id="talentosPassivos"></table>
+                    <button onclick="addTalent('talentosPassivos')">Adicionar</button>
+                </section>
+
+                <section class="defeito-card card">
+                    <h2>Defeitos</h2>
+                    <table id="defeitos"></table>
+                    <button onclick="addTalent('defeitos')">Adicionar</button>
+                </section>
+
+            </div>
+
+        <section class="card recursos-card">
+            <div class="resource-columns">
+
+                    <div class="resource-section">
+                        <h2>Moedas</h2>
+                        <div class="resource-grid">
+
+                            <div class="resource-box">
+                                <label for="cruzado">Cruzado</label>
+                                <input id="cruzado" type="number" min="0" max="9999">
+                            </div>
+
+                            <div class="resource-box">
+                                <label for="tostao">Tostão</label>
+                                <input id="tostao" type="number" min="0" max="9999">
+                            </div>
+
+                            <div class="resource-box">
+                                <label for="clave">Clave</label>
+                                <input id="clave" type="number" min="0" max="9999">
+                            </div>
+
+                            <div class="resource-box">
+                                <label for="skom">Skom</label>
+                                <input id="skom" type="number" min="0" max="9999">
+                            </div>
+
+                            <div class="resource-box">
+                                <label for="chizao">Chizao</label>
+                                <input id="chizao" type="number" min="0" max="9999">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="resource-section">
+                        <h2>Minérios</h2>
+                        <div class="resource-grid">
+
+                            <div class="resource-box">
+                                <label for="belerio">Belério</label>
+                                <input id="belerio" type="number" min="0" max="9999">
+                            </div>
+
+                            <div class="resource-box">
+                                <label for="hidronio">Hidrônio</label>
+                                <input id="hidronio" type="number" min="0" max="9999">
+                            </div>
+
+                            <div class="resource-box">
+                                <label for="veriton">Vériton</label>
+                                <input id="veriton" type="number" min="0" max="9999">
+                            </div>
+
+                            <div class="resource-box">
+                                <label for="ferrita">Ferrita</label>
+                                <input id="ferrita" type="number" min="0" max="9999">
+                            </div>
+
+                            <div class="resource-box">
+                                <label for="oricalco">Oricalco</label>
+                                <input id="oricalco" type="number" min="0" max="9999">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <div class="save-panel">
+            <button id="exportJson">💾 Exportar Ficha</button>
+            <button id="importJson">📂 Importar Ficha</button>
+            <button id="exportPNG">📸 Exportar PNG</button>
+            <button id="exportPDF">📜 Exportar PDF</button>
+
+        <input
+        type="file"
+        id="importFile"
+        accept=".json"
+        hidden>
+        </div>
+
+    </div>
+
+    <!-- COLUNA DIREITA -->
+    <div class="right-column">
+        
+        <div class="notes-grid">
+
+            <section class="card habilidades-card">
+                <h2>Habilidades</h2>
+
+                <textarea
+                    id="habilidades"
+                    class="notes-box">
+                </textarea>
+            </section>
+
+            <section class="card anotacoes-card">
+                <h2>Itens e Equipamentos</h2>
+
+                <textarea
+                    id="anotacoes"
+                    class="notes-box">
+                </textarea>
+            </section>
+
+        </div>
+
+        <div class="magic-grid">
+
+            <section class="card magia-card">
+                 <label for="truques">Truques</label>
+                    <textarea id="truques" class="magic-box"></textarea>
+
+                    <label for="elo1">Elo 1</label>
+                    <textarea id="elo1" class="magic-box"></textarea>
+
+                    <label for="elo2">Elo 2</label>
+                    <textarea id="elo2" class="magic-box"></textarea>
+
+                    <label for="elo3">Elo 3</label>
+                    <textarea id="elo3" class="magic-box"></textarea>
+
+                    <label for="elo4">Elo 4</label>
+                    <textarea id="elo4" class="magic-box"></textarea>
+
+                    <label for="elo5">Elo 5</label>
+                    <textarea id="elo5" class="magic-box"></textarea>
+            </section>
+
+            <section class="card psiquismo-card">
+                <h2>Poderes Psíquicos</h2>
+                    <textarea id="psiquicos" class="psiquico-box"></textarea>
+            </section>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/dados.js"></script>
+    <script src="js/selects.js"></script>
+    <script src="js/skills.js"></script>
+
+    <script src="js/combate.js"></script>
+    <script src="js/castas.js"></script>
+    <script src="js/atributos.js"></script>
+
+    <script src="js/linhagens.js"></script>
+
+    <script src="js/portrait.js"></script>
+    <script src="js/ficha.js"></script>
+    <script src="js/autosave.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/jspdf.umd.min.js"></script>
+    <script src="js/exportar.js"></script>
+    <script src="js/importar.js"></script>
+
+</body>
+
+</html>

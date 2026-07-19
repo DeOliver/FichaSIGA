@@ -1,0 +1,434 @@
+/* =========================
+   BASE
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url("../imagens/papel.png");
+    background-size:cover;
+    background-attachment:fixed;
+    padding:100px;
+    font-family:Georgia, serif;
+    color:#6b1f2a;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo-ficha{
+    margin-top: 50px;;
+    text-align:center;
+    font-size:42px;
+    margin-bottom:25px;
+    color:#969393;
+    text-shadow: 5px 5px 5px #6b1f2a;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+
+.sheet{
+    width:100%;
+    max-width:1800px;
+    margin:0 auto;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    background:rgba(150, 150, 150, 0.438);
+    border:3px solid #6b1f2a;
+    border-radius:15px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    width:100%;
+    background:#868383;
+    border:1px solid rgb(78,5,5);
+    border-radius:10px;
+    padding:20px;
+}
+
+.triple-field{
+    display:flex;
+    gap:8px;
+}
+
+.triple-field input{
+    width:60px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:8px 10px;
+    min-height:38px;
+    font-size:16px;
+    line-height:1.3;
+    margin-top:5px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:6px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#6b1f2a;
+    color:white;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.character-header{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+.character-data{
+    display:grid;
+    gap:15px;
+}
+
+.level-exp{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+/* =========================
+   RETRATO
+========================= */
+
+.portrait-area img{
+    /*width:70%;*/
+    height:450px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* =========================
+   ATRIBUTOS
+========================= */
+
+.attributes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(120px, 1fr));
+    gap:15px;
+    align-items:stretch;
+}
+
+.attribute-box{
+    background:rgba(255,255,255,0.08);
+    border-radius:8px;
+    padding:10px;
+    text-align:center;
+}
+
+.attribute-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.attribute-row{
+    display:flex;
+    justify-content:center;
+    gap:5px;
+}
+
+.attribute-row input{
+    width:100%;
+    max-width:70px;
+}
+
+/* =========================
+   VIDA / COMBATE / SKILLS
+========================= */
+
+.vida-card{
+    width:100%;
+    min-height:100%;
+    box-sizing:border-box;
+}
+
+.combate-card{
+    width:100%;
+    min-height:100%;
+    box-sizing:border-box;
+}
+
+.skills-card{
+    width:100%;
+    min-height:100%;
+    box-sizing:border-box;
+}
+
+.status-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns: 0.9fr 0.9fr 2fr;
+    gap:20px;
+    align-items:start;
+}
+
+#skills{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    width:100%;
+}
+
+.skill-card{
+    background:#999898;
+    padding:10px;
+    border-radius:8px;
+}
+
+/*==========================
+|           ARMAS
+==========================*/
+
+#armas{
+    width:100%;
+    border-collapse:collapse;
+}
+
+#armas td{
+    padding:5px;
+}
+
+#armas input{
+    width:100%;
+}
+
+#armas button{
+    width:40px;
+    padding:6px;
+}
+
+.arma-nome{
+    width:100%;
+}
+
+.arma-dano{
+    width:90px;
+}
+
+/* =========================
+   LAYOUT INFERIOR
+========================= */
+
+.bottom-layout{
+    display:grid;
+    grid-template-columns: minmax(320px, 1fr) minmax(700px, 2fr);
+    gap:25px;
+    align-items:start;
+    width:100%;
+}
+
+.left-column{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    width:100%;
+}
+
+.right-column{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    width:100%;
+}
+
+/* =========================
+   COLUNA ESQUERDA
+========================= */
+
+.left-column{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* =========================
+   COLUNA DIREITA
+========================= */
+
+.right-column{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* =========================
+   TALENTOS
+========================= */
+
+.talentos-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    width:100%;
+}
+
+/* =========================
+   MAGIAS / PSIQUISMO
+========================= */
+
+.magic-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    width:100%;
+}
+
+.magic-box{
+    min-height:90px;
+}
+
+.psiquico-box{
+    min-height:650px;
+}
+
+/* =========================
+   TEXTAREAS GERAIS
+========================= */
+
+textarea{
+    width:100%;
+    min-height:120px;
+    padding:10px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:6px;
+    resize:none;
+    overflow-y:auto;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    box-sizing:border-box;
+}
+
+/* =========================
+   HABILIDADES E ITENS
+========================= */
+
+.notes-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    width:100%;
+}
+
+.habilidades-card,
+.anotacoes-card{
+    width:100%;
+    min-height:350px;
+    display:flex;
+    flex-direction:column;
+    overflow:visible;
+}
+
+.notes-box{
+    width:100%;
+    height:300px;
+    min-height:300px;
+    max-height:none;
+    overflow-y:auto;
+    resize:vertical;
+    display:block;
+}
+
+/* =========================
+   RECURSOS
+========================= */
+
+.resource-columns{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    width:100%;
+}
+
+.resource-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.resource-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.resource-box input{
+    width:80px;
+    text-align:center;
+}
+
+/* =========================
+   CHECKS
+========================= */
+
+.check-track,
+.focus-track{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.check-track input,
+.focus-track input{
+    width:20px;
+    height:20px;
+}
+
+/* =========================
+   TABELAS
+========================= */
+
+table{
+    width:100%;
+}
+
+/* =========================
+   SAVE PANEL
+========================= */
+
+.save-panel{
+    grid-column:1 / -1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    width:100%;
+}
