@@ -76,6 +76,7 @@ function carregar(){
         Object.keys(dados)
         .filter(chave =>
             chave.startsWith(`${tabelaId}_nome_`) ||
+            chave.startsWith(`${tabelaId}_pa_`) ||
             chave.startsWith(`${tabelaId}_dano_`)
         );
 
