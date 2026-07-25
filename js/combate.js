@@ -130,6 +130,9 @@ function addItem(id){
     const cell3 =
     row.insertCell(2);
 
+    const cell4 =
+    row.insertCell(3);
+
     cell1.innerHTML =
     `<input
         type="text"
@@ -140,9 +143,9 @@ function addItem(id){
 
     cell2.innerHTML = `
     <select
-        id="${id}_dano_${index}"
-        name="${id}_dano_${index}"
-        class="arma-dano">
+        id="${id}_pa_${index}"
+        name="${id}_pa_${index}"
+        class="arma-pa">
 
         <option value="1d3">1d3</option>
         <option value="1d6">1d6</option>
@@ -163,8 +166,34 @@ function addItem(id){
         <option value="3d12">3d12</option>
 
     </select>`;
+    cell3.innerHTML = `
+        <select
+            id="${id}_dano_${index}"
+            name="${id}_dano_${index}"
+            class="arma-dano">
 
-    cell3.innerHTML =
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+
+        </select>`;
+
+
+    cell4.innerHTML =
     `<button
         class="delete-btn"
         onclick="removerLinha(this)">
