@@ -1,16 +1,16 @@
 const skills = [
-"Diplomacia",
+"Influência",
 "Atletismo",
-"Ladinagem",
+"Crime",
 "Furtividade",
 "Conhecimento",
 "Investigação",
-"Mecânica",
+"Ofício",
 "Medicina",
-"Navegação",
+"Tecnologia",
 "Pilotagem",
 "Sobrevivência",
-"Idiomas"
+"Ocultismo"
 ];
 
 const container =
