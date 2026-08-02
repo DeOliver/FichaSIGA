@@ -1,13 +1,12 @@
 const dadosCastas = {
-    "Limpo": { pv: 0, pe: 0 },
     "Física/Gladiador": { pv: 16, pe: 6 },
     "Física/Soldado": { pv: 14, pe: 6 },
     "Física/Vanguardista": { pv: 15, pe: 6 },
     "Física/Espadachim": { pv: 16, pe: 6 },
     "Física/Explorador": { pv: 13, pe: 6 },
     "Física/Corsário": { pv: 14, pe: 6 },
-    "Física/Batedor": { pv: 13, pe: 6 },
-    "Física/Frater": { pv: 14, pe: 6 },
+    "Física/Ladino": { pv: 13, pe: 6 },
+    "Física/Acólito": { pv: 14, pe: 6 },
 
     "Híbrida/Menestrel": { pv: 13, pe: 6 },
     "Híbrida/Engenheiro": { pv: 12, pe: 6 },
@@ -15,16 +14,16 @@ const dadosCastas = {
     "Híbrida/Alquimista": { pv: 12, pe: 6 },
     "Híbrida/Sentinela": { pv: 14, pe: 6 },
     "Híbrida/Primalista": { pv: 13, pe: 6 },
-    "Híbrida/Cavaleiro Rúnico": { pv: 14, pe: 6 },
-    "Híbrida/Cavaleiro Cinético": { pv: 15, pe: 6 },
+    "Híbrida/Haxarim": { pv: 13, pe: 6 },
+    "Híbrida/Tecnomante": { pv: 14, pe: 6 },
 
-    "Mística/Arcanista": { pv: 12, pe: 6 },
-    "Mística/Xamã": { pv: 13, pe: 6 },
+    "Mística/Arcanista": { pv: 12, pe: 10 },
+    "Mística/Xamã": { pv: 13, pe: 7 },
     "Mística/Mago de Sangue": { pv: 13, pe: 6 },
-    "Mística/Doutor da Praga": { pv: 12, pe: 6 },
-    "Mística/Sacerdote": { pv: 13, pe: 6 },
-    "Mística/Tecelão Arcano": { pv: 12, pe: 6 },
-    "Mística/Haxarim": { pv: 13, pe: 6 },
+    "Mística/Doutor da Praga": { pv: 12, pe: 7 },
+    "Mística/Sacerdote": { pv: 13, pe: 4 },
+    "Mística/Bruxo": { pv: 10, pe: 12 },
+    "Mística/Rúnico": { pv: 14, pe: 8 },
     "Mística/Telepata": { pv: 12, pe: 6 }
 
 };
