@@ -3,7 +3,7 @@ const linhagem = [
 "Dhampiro","Drakar","Elfen","Fada","Gajarin","Hellrog",
 "Humano","Ikan","Leafen","Leporídeo","Licarin","NanDhur",
 "NanZhur","Mamba","Mirath","Retornado","Sylvano","Tarog","Thar",
-"Temah","Tuanak","Uriel","Urvolg","Vaporúrgico_Grande", "Vaporúrgico_Pequeno", "Vok","Yullen"
+"Troll","Tuanak","Uriel","Urvolg","Vaporúrgico_Grande", "Vaporúrgico_Pequeno", "Vok","Yullen"
 ];
 
 const classe = [
@@ -15,23 +15,23 @@ const classe = [
 "Física/Espadachim",
 "Física/Explorador",
 "Física/Corsário",
-"Física/Batedor",
-"Física/Frater",
+"Física/Ladino",
+"Física/Adcólito",
 "Híbrida/Menestrel",
 "Híbrida/Engenheiro",
 "Híbrida/Lutador",
 "Híbrida/Alquimista",
 "Híbrida/Sentinela",
 "Híbrida/Primalista",
-"Híbrida/Cavaleiro Rúnico",
-"Híbrida/Cavaleiro Cinético",
+"Híbrida/Haxarim",
+"Híbrida/Tecnomante",
 "Mística/Arcanista",
 "Mística/Xamã",
 "Mística/Mago de Sangue",
 "Mística/Doutor da Praga",
 "Mística/Sacerdote",
-"Mística/Tecelão Arcano",
-"Mística/Haxarim",
+"Mística/Bruxo",
+"Mística/Rúnico",
 "Mística/Telepata"
 
 ];
