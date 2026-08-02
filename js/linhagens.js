@@ -21,13 +21,13 @@ const bonusLinhagens = {
     NanZhur: { fixo: { res: 2, von: -1 } },
     Mamba: { fixo: { for: 2, von: -1 } },
     Mirath: { fixo: { agi: 1, int: 1 } },
-    Retornado: { especial: "retornado" },
+    Retornado: { fixo: { res: 1, for: 1, agi: -1 } },
     Sylvano: { fixo: { agi: 2, int: -1 } },
     Tarog: { fixo: { for: 2, von: -1 } },
     Thar: { fixo: { pre: 2, for: -1 } },
-    Temah: { fixo: { int: 1, von: 1, agi: -1 } },
+    Troll: { fixo: { for: 2, int: -1 } },
     Tuanak: { fixo: { agi: 2, for: -1 } },
-    Uriel: { fixo: { von: 2, res: -1 } },
+    Uriel: { fixo: { pre: 1, von: 1, res: -1 } },
     Urvolg: { fixo: { for: 2, res: 1, int: -1 } },
     Vaporúrgico_Grande: { fixo: { for: 1, res: 1, agi: -1 } },
     Vaporúrgico_Pequeno: { fixo: { agi: 1, res: 1, for: -1 } },
@@ -46,61 +46,6 @@ function resetAtributos(){
         ).value = 0;
 
     });
-
-}
-
-function aplicarRetornado(){
-
-    const bonus =
-    prompt(
-        "Escolha 2 atributos para +1 (separe por vírgula)"
-    );
-
-    const penalidade =
-    prompt(
-        "Escolha 1 atributo para -1"
-    );
-
-    if(bonus){
-
-        bonus.split(",")
-        .forEach(attr=>{
-
-            attr =
-            attr.trim().toLowerCase();
-
-            const campo =
-            document.getElementById(
-                `${attr}_bp`
-            );
-
-            if(campo){
-
-                // SUBSTITUI em vez de acumular errado
-                campo.value =
-                Number(campo.value || 0) + 1;
-
-            }
-
-        });
-
-    }
-
-    if(penalidade){
-
-        const campo =
-        document.getElementById(
-            `${penalidade.trim().toLowerCase()}_bp`
-        );
-
-        if(campo){
-
-            campo.value =
-            Number(campo.value || 0) - 1;
-
-        }
-
-    }
 
 }
 
