@@ -16,7 +16,7 @@ const classe = [
 "Física/Explorador",
 "Física/Corsário",
 "Física/Ladino",
-"Física/Adcólito",
+"Física/Acólito",
 "Híbrida/Menestrel",
 "Híbrida/Engenheiro",
 "Híbrida/Lutador",
