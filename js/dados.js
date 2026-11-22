@@ -1,9 +1,9 @@
 const linhagem = [
 "Argan","Aslan","Anserin","Anubyr","Auroke","Avarin",
 "Dhampiro","Drakar","Elfen","Fada","Gajarin","Hellrog",
-"Humano","Ikan","Leafen","Leporídeo","Licarin","NanDhur",
-"NanZhur","Mamba","Mirath","Retornado","Sylvano","Tarog","Thar",
-"Troll","Tuanak","Uriel","Urvolg","Vaporúrgico_Grande", "Vaporúrgico_Pequeno", "Vok","Yullen"
+"Humano","Ikan","Leporídeo","Licarin","NanDhur",
+"NanZhur","Mamba","Metadílio","Mirath","Retornado","Sylvano","Tarog","Thar",
+"Temah","Tuanak","Uriel","Urvolg","Vaporúrgico_Grande", "Vaporúrgico_Pequeno", "Vok","Yullen"
 ];
 
 const classe = [
